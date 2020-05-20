@@ -14,7 +14,7 @@ routes.post(
   "/sessions",
   celebrate({
     [Segments.BODY]: Joi.object().keys({
-      name: Joi.string().required(),
+      id: Joi.string().required(),
     }),
   }),
   SessionController.create
